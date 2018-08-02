@@ -71,20 +71,49 @@ apt 是Ubuntu下的安装包管理工具
 （1）安装软件
 
 	sudo apt install 软件名
-  
+
 （2）卸载软件
 
 	sudo apt remove 软件名
-  
+
 （3）更新可用软件包列表
 
 	sudo apt update
-  
+
 （4）更新已安装的包
 
 	sudo apt upgrade
-	
-	
-	
 
+**apt是apt-get格式的增强版**
+## deb格式及谷歌浏览器的安装
+deb是Bebian Linux的安装格式（类似于exe），在Ubuntu中同样可以使用，需要安装deb安装包，需要使用dpkg终端命令：
 
+	sudo dpkg -i<pakege.deb>
+
+（1）下载谷歌浏览器安装包
+
+（2）输入安装命令
+
+	dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+	sudo apt install libappindicator1 libindicator7
+	sudo dpkg -i google-chrome-stable_current_amd64.deb
+	sudo apt -f install **解决已经安装好的软件的依赖关系的修复**
+## 搜狗输入法的安装设置分辨率
+
+fcitx被称小企鹅输入法，优点是，短小精悍、和程序的兼容性比较好！
+（1）打开系统设置->语言支持->将键盘输入法系统改为fcitx
+
+![9](/home/heigou/Desktop/Python/image/9.png)
+
+（2）下载搜狗输入法安装包 [网址]（http://pinyin.sogou.com/linux）
+
+（3）输入安装命令：
+
+	sudo dpkg -i sogoupinyin_2.2.0.0108_amd64.deb
+![10](/home/heigou/Desktop/Python/image/10.png)
+（4）安装完成之后会有报错情况，此时需要使用命令：
+
+	sodu apt -f install
+![11](/home/heigou/Desktop/Python/image/11.png)
+
+	**解决问题**
