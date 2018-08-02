@@ -97,7 +97,8 @@ deb是Bebian Linux的安装格式（类似于exe），在Ubuntu中同样可以�
 	dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 	sudo apt install libappindicator1 libindicator7
 	sudo dpkg -i google-chrome-stable_current_amd64.deb
-	sudo apt -f install **解决已经安装好的软件的依赖关系的修复**
+	sudo apt -f install
+**sudo apt -f install解决已经安装好的软件的依赖关系的修复**
 ## 搜狗输入法的安装设置分辨率
 
 fcitx被称小企鹅输入法，优点是，短小精悍、和程序的兼容性比较好！
@@ -110,10 +111,12 @@ fcitx被称小企鹅输入法，优点是，短小精悍、和程序的兼容性
 （3）输入安装命令：
 
 	sudo dpkg -i sogoupinyin_2.2.0.0108_amd64.deb
+
 ![10](/home/heigou/Desktop/Python/image/10.png)
+
 （4）安装完成之后会有报错情况，此时需要使用命令：
 
 	sodu apt -f install
 ![11](/home/heigou/Desktop/Python/image/11.png)
 
-	**解决问题**
+**解决问题**
