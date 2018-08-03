@@ -106,6 +106,8 @@ fcitx被称小企鹅输入法，优点是，短小精悍、和程序的兼容性
 
 ![9](/home/heigou/Desktop/Python/image/9.png)
 
+<p align="center"><img src="https://raw.githubusercontent.com/home/heigou/Desktop/Python/image/9.png" width="50%"></p>
+
 （2）下载搜狗输入法安装包 [网址]（http://pinyin.sogou.com/linux）
 
 （3）输入安装命令：
