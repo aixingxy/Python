@@ -104,7 +104,7 @@ deb是Bebian Linux的安装格式（类似于exe），在Ubuntu中同样可以�
 fcitx被称小企鹅输入法，优点是，短小精悍、和程序的兼容性比较好！
 （1）打开系统设置->语言支持->将键盘输入法系统改为fcitx
 
-![9](/home/heigou/Desktop/Python/image/9.png)
+![9](https://github.com/Renwoxin/Python/blob/master/image/9.png)
 
 （2）下载搜狗输入法安装包 [网址]（http://pinyin.sogou.com/linux）
 
@@ -112,11 +112,11 @@ fcitx被称小企鹅输入法，优点是，短小精悍、和程序的兼容性
 
 	sudo dpkg -i sogoupinyin_2.2.0.0108_amd64.deb
 
-![10](/home/heigou/Desktop/Python/image/10.png)
+![10](https://github.com/Renwoxin/Python/blob/master/image/10.png)
 
 （4）安装完成之后会有报错情况，此时需要使用命令：
 
 	sodu apt -f install
-![11](/home/heigou/Desktop/Python/image/11.png)
+![11](https://github.com/Renwoxin/Python/blob/master/image/11.png)
 
 **解决问题**
