@@ -3,13 +3,13 @@
 
 Python中使用基本的平方、加法、乘法：
 
-![12]()
+![12](https://github.com/Renwoxin/Python/blob/master/image/12.png)
 
 ## 操作系统（Operation System， OS）
 
 ### 操作系统接口示意图
 
-![13]()
+![13](https://github.com/Renwoxin/Python/blob/master/image/13.png)
 
 **没有安装操作系统的计算机，通常被称为裸机**
 （1）如果想在裸机上运行自己所编写的程序，就必须用机器语言（011010001）书写程序
@@ -33,7 +33,7 @@ Python中使用基本的平方、加法、乘法：
 
 **播放音乐的事例**
 
-![14]()
+![14](https://github.com/Renwoxin/Python/blob/master/image/14.png)
 
 ### 不同应用领域的操作系统
 1）桌面操作系统：
