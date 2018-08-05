@@ -64,6 +64,7 @@ ctrl - 缩小终端窗口字体
 
     rm-r 文件名
    **rm最直接的就是删除文件**
+
 <img src="17.png" width="70%" height="60%" />
 <img src="18.png" width="70%" height="60%" />
 
