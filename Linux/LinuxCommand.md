@@ -36,25 +36,40 @@ ctrl - 缩小终端窗口字体
 |06   |rm [文件名]   |remove   |删除指定的文件名   |
 |07   |clear   |clear   |清屏   |
 
-#### 01	ls	list	查看当前文件夹下的内容
+#### 01	ls	list查看当前文件夹下的内容
+
 <img src="9.png" width="70%" height="60%" />
+
 #### 02 pwd	print wrok directory	查看当前所在文件夹
+
 <img src="10.png" width="70%" height="60%" />
+
 #### 03 cd [目录名]	change dictionary	切换文件夹
+
 **Linux 区分大小写，所以Desktop需要大写**
+
 <img src="11.png" width="70%" height="60%" />
+
 #### 04 touch [文件名]
+
 <img src="12.png" width="70%" height="60%" />
+
 #### 05	mkdir [目录名]	make directory	创建目录
+
 <img src="13.png" width="70%" height="60%" />
+
 #### 06	rm [文件名]	remove	删除指定的文件名
+
 **rm最直接的就是删除文件，对目录的删除还需要其他操作**
+
 <img src="14.png" width="70%" height="60%" />
 <img src="15.png" width="70%" height="60%" />
 <img src="16.png" width="70%" height="60%" />
+
 #### 07	clear	clear	清屏
 
 # Linux终端命令格式
+
 **command [-options] [parameter]**(三者之间的空格是必须的)
 
 **说明**
@@ -63,13 +78,14 @@ ctrl - 缩小终端窗口字体
 （2）-options：选项，可用来对命令进行控制，也可以省略
 
     rm-r 文件名
-   **rm最直接的就是删除文件**
+    
+ **rm最直接的就是删除文件**
 
 <img src="17.png" width="70%" height="60%" />
 <img src="18.png" width="70%" height="60%" />
 
 （3）parameter：传给命令参数，个数可以是0、1、多个
 
-    touch **文件名称**、cd **目录名称**,这些都属于parameter
+    touch 文件名称 、 cd 目录名称** , 这些都属于parameter
 
 [ ]代表可选填，比如ls、pwd、clear这类命令可以没有options和parameter
