@@ -14,11 +14,11 @@
 
 **单独的tree命令可以显示当前目录下的文件和文件夹的树形结构，以及文件和文件夹的个数**
 
-![tree1 ](tree1.png)
+![tree1 ](image/tree1.png)
 
 **tree -d 只显示目录**
 
-![tree2](tree2.png)
+![tree2](image/tree2.png)
 
 ## 4.2 cp
 
@@ -30,7 +30,7 @@ cp 命令的功能是将给出的 **文件** 或者 **目录** 中，相当于DO
 
   （2）cp ~/Documents/readme.txt  . ——直接将文件复制的目标文件夹，不用重命名
 
-![copy](copy.png)
+![copy](image/copy.png)
 
 |选项|含义|
 |:---|:---|
@@ -41,19 +41,19 @@ cp 命令的功能是将给出的 **文件** 或者 **目录** 中，相当于DO
 
 （1）使用cp -i ~/Documents/readme.txt .，**选择不覆盖**
 
-![cp1](cp1.png)
+![cp1](image/cp1.png)
 
 （2）使用cp -i ~/Documents/readme.txt .，**选择覆盖**
 
-![cp4](cp4.png)
+![cp4](image/cp4.png)
 
-![cp5](cp5.png)
+![cp5](image/cp5.png)
 
 ### cp -r 源文件 目标文件
 
 **使用cp复制文件夹时，也需要使用“-r”**
 
-![cp7](cp7.png)
+![cp7](image/cp7.png)
 
 ## 4.3 mv
 
@@ -65,14 +65,14 @@ cp 命令的功能是将给出的 **文件** 或者 **目录** 中，相当于DO
 
 （1）把bb文件夹下的13.txt移动到当前文件夹下
 
-![mv1](mv1.png)
+![mv1](image/mv1.png)
 
 （2）对文件进行重命名，且配合"-i"使用
 
-![mv2](mv2.png)
+![mv2](image/mv2.png)
 
-![mv3](mv3.png)
+![mv3](image/mv3.png)
 
 （3）对文件夹进行重命名
 
-![mv4](mv4.png)
+![mv4](image/mv4.png)
