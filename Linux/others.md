@@ -18,7 +18,7 @@ Hello Python
 
 **其中**
 
-+ > 表示输出，会覆盖文件原有的内容
++ ' > '  表示输出，会覆盖文件原有的内容
 
 ```
 heigou@ubuntu:~/Desktop$ echo Hello Python > a
@@ -42,7 +42,7 @@ drwxrwxr-x 5 heigou heigou 4.0K Aug  3 21:10 Python
 -rw-rw-r-- 1 heigou heigou  222 Aug  8 18:58 readme.txt
 ```
 
-+ >> 表示追加，会将内容追加到已有文件的末尾
++ ' >> ' 表示追加，会将内容追加到已有文件的末尾
 
 ```
 heigou@ubuntu:~/Desktop$ cat a
@@ -59,7 +59,7 @@ drwxrwxr-x 5 heigou heigou 4.0K Aug  3 21:10 Python
 Hello Python
 ```
 
-## 管道|
+## 管道 |
 + Linux允许将一个命令的输出可以通过管道做为另一个命令的输入
 + 可以理解现实生活的管子，管子的一头塞进去，另一头取出来，这里|的左右分为两级，左端塞东西（写），右端取东西（读）
 
