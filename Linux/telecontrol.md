@@ -161,8 +161,8 @@ rtt min/avg/max/mdev = 0.023/0.031/0.047/0.007 ms
 + 由一串用点分隔的名字组成，例如：www.itcast.cn
 + 是IP地址的别名，方便用户记忆
   + www.baidu.com则是百度的域名，而119.75.213.61是百度的IP地址
-  ```
-  heigou@ubuntu:~/Desktop$ ping www.baidu.com
+```
+heigou@ubuntu:~/Desktop$ ping www.baidu.com
 PING www.a.shifen.com (119.75.213.61) 56(84) bytes of data.
 64 bytes from 119.75.213.61: icmp_seq=1 ttl=128 time=30.2 ms
 64 bytes from 119.75.213.61: icmp_seq=2 ttl=128 time=30.4 ms
