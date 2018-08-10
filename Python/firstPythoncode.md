@@ -45,7 +45,7 @@ Hello world
 + 俗称BUG，是程序员在开发时非常常见的，初学者常见错误的原因包括：
 1.手误
 
-![print_error](image/print_error.png)
+![printerror](image/printerror.png)
 
 2.对已经学习过的知识理解还存在不足
 3.对语言还需要学习和提升的内容
@@ -54,11 +54,12 @@ Hello world
 
 + 将多条print写在一行
 
-![printerror](image/printerror.png)
+![printerror2](image/printerror2.png)
 
 + 缩进错误
 
 ![printerror1](image/printerror1.png)
+
 > + python是一个格式非常严格额程序设计语言
 
 + Python2.x默认不支持中文
