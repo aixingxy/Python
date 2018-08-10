@@ -1,3 +1,11 @@
+<!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
+
+- [其他](#其他)
+	- [echo 文字内容](#echo-文字内容)
+	- [重定向 > 和 >>](#重定向-和-)
+	- [管道 |](#管道-)
+
+<!-- /TOC -->
 # 其他
 
 ## echo 文字内容

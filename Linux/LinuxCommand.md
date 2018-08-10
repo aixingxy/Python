@@ -1,3 +1,19 @@
+<!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
+
+- [常用Linux命令的基本使用](#常用linux命令的基本使用)
+	- [目标](#目标)
+		- [学习Linux终端命令的原因](#学习linux终端命令的原因)
+		- [常用Linux命令的基本使用](#常用linux命令的基本使用)
+			- [01	ls	list查看当前文件夹下的内容](#01-ls-list查看当前文件夹下的内容)
+			- [02 pwd	print wrok directory	查看当前所在文件夹](#02-pwd-print-wrok-directory-查看当前所在文件夹)
+			- [03 cd [目录名]	change dictionary	切换文件夹](#03-cd-目录名-change-dictionary-切换文件夹)
+			- [04 touch [文件名]](#04-touch-文件名)
+			- [05	mkdir [目录名]	make directory	创建目录](#05-mkdir-目录名-make-directory-创建目录)
+			- [06	rm [文件名]	remove	删除指定的文件名](#06-rm-文件名-remove-删除指定的文件名)
+			- [07	clear	clear	清屏](#07-clear-clear-清屏)
+- [Linux终端命令格式](#linux终端命令格式)
+
+<!-- /TOC -->
 # 常用Linux命令的基本使用
 
 ## 目标

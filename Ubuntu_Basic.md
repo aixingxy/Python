@@ -1,3 +1,16 @@
+<!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
+
+- [ubuntu安装教程](#ubuntu安装教程)
+	- [准备工作](#准备工作)
+	- [设置语言环境](#设置语言环境)
+	- [常用软件安装](#常用软件安装)
+		- [1.设置服务器镜像源](#1设置服务器镜像源)
+		- [2.在启动栏添加终端](#2在启动栏添加终端)
+		- [3.apt终端命令](#3apt终端命令)
+	- [deb格式及谷歌浏览器的安装](#deb格式及谷歌浏览器的安装)
+	- [搜狗输入法的安装设置分辨率](#搜狗输入法的安装设置分辨率)
+
+<!-- /TOC -->
 # ubuntu安装教程
 
 ## 准备工作
@@ -84,6 +97,30 @@ apt 是Ubuntu下的安装包管理工具
 
 	sudo apt upgrade
 
++ sl 安装
+
+```
+sudo apt install sl
+
+```
++ htop 安装
+
+```
+sudo apt install sl
+```
+<!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
+
+- [ubuntu安装教程](#ubuntu安装教程)
+	- [准备工作](#准备工作)
+	- [设置语言环境](#设置语言环境)
+	- [常用软件安装](#常用软件安装)
+		- [1.设置服务器镜像源](#1设置服务器镜像源)
+		- [2.在启动栏添加终端](#2在启动栏添加终端)
+		- [3.apt终端命令](#3apt终端命令)
+	- [deb格式及谷歌浏览器的安装](#deb格式及谷歌浏览器的安装)
+	- [搜狗输入法的安装设置分辨率](#搜狗输入法的安装设置分辨率)
+
+<!-- /TOC -->
 **apt是apt-get格式的增强版**
 ## deb格式及谷歌浏览器的安装
 deb是Bebian Linux的安装格式（类似于exe），在Ubuntu中同样可以使用，需要安装deb安装包，需要使用dpkg终端命令：

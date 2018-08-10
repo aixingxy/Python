@@ -1,3 +1,11 @@
+<!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
+
+- [查看文件内容](#查看文件内容)
+	- [cat](#cat)
+	- [more](#more)
+	- [grep](#grep)
+
+<!-- /TOC -->
 # 查看文件内容
 
 |序号|命令|对应英文|作用|
