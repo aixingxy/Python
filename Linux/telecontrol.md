@@ -294,8 +294,8 @@ scp -r user@remote：Desktop demo
 + 而配置别名 可以让我们很方便，譬如用：ssh lyl 来代替上面的命令，那么就在~/.ssh/config 里面追加以下内容：
 ```
 Host lyl
-    HostName ip地址
-    User heigou
-    Port 22
+HostName ip地址
+User heigou
+Port 22
 ```
 **保存之后，即可使用 ssh lyl 实现远程登录了， scp同样可以使用**
