@@ -1,3 +1,13 @@
+<!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
+
+- [第一个Python程序](#第一个python程序)
+	- [第一个HelloPython 程序](#第一个hellopython-程序)
+		- [Python源程序的基本概念](#python源程序的基本概念)
+		- [演练步骤](#演练步骤)
+		- [演练扩展——认识错误（BUG）](#演练扩展认识错误bug)
+- [Python 2.x与3.x版本简介](#python-2x与3x版本简介)
+
+<!-- /TOC -->
 # 第一个Python程序
 
 ## 第一个HelloPython 程序
