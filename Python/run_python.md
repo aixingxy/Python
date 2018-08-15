@@ -186,7 +186,7 @@ print("Hello")
 print("Hello")
 ```
 
-![PyChar5](pychar5.png)
+![pychar5](image/pychar5.png)
 
 ### 关于代码规范
 + Python官方提供有一系列PEP（Python Enhancement Proposals）文档
@@ -351,7 +351,6 @@ print(qq_password)
 + 在程序开发中，可以修改之前定义变量中保存的值，变量中的值是可以变的
 
 ## 变量的类型
-
 + 在内存中创建一个变量，包括：
 	1. 变量的名称
 	2. 变量保存的数据
