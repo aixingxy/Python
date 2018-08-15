@@ -185,6 +185,7 @@ print("Hello")
 """
 print("Hello")
 ```
+
 ![PyChar5](pychar5.png)
 
 ### 关于代码规范
@@ -330,7 +331,8 @@ print(qq_password)
 ```
 ## 关闭标签
 
-![PyCharm6](image/pycharm6.png)
+![PyCharm6](image/pychar6.png)
+
 ## 思考题
 
 ```
@@ -386,9 +388,10 @@ print(qq_password)
 	weight = 75.0
 	print(name)
 ```
+
 ![variabe ](image/variabe.png)
 
-#### 4种数据类型
+### 4种数据类型
 + str -- 字符串
 + bool -- 布尔（真假）
 + int -- 整数
