@@ -197,6 +197,7 @@ print("Hello")
 ## 算数运算符
 + 算数运算符是运算符的一种
 + 是完成基本的算术运算使用的符号，处理四则运算
+
 |运算符|描述|
 |:---|:---|
 |+   |加   |   
@@ -260,11 +261,11 @@ Out[10]: '----------'
 
 + 查看Python解释器大小
 ```
-heigou@ubuntu:~/Desktop$ which python ——查看位置
+heigou@ubuntu:~/Desktop$ which python  # 查看位置
 /usr/bin/python
 heigou@ubuntu:~/Desktop$ ls -lh /usr/bin/python
 lrwxrwxrwx 1 root root 9 Aug  2 01:02 /usr/bin/python -> python2.7
-heigou@ubuntu:~/Desktop$ ls -lh /usr/bin/python2.7 ——查看Python2.7大小
+heigou@ubuntu:~/Desktop$ ls -lh /usr/bin/python2.7 # 查看Python2.7大小
 -rwxr-xr-x 1 root root 3.4M Dec  5  2017 /usr/bin/python2.7
 ```
 + python和python2.7实则建立软连接
@@ -278,7 +279,7 @@ heigou@ubuntu:~/Desktop$ ls -lh /usr/bin/python2.7 ——查看Python2.7大小
 
 ### 思考QQ程序的启动过程
 	1. QQ在运行之前，程序保存在硬盘中
-	1. 运行之后，QQ程序就会被加载到内容中
+	2. 运行之后，QQ程序就会被加载到内容中
 
 # 变量的基本作用
 > 程序用来处理数据，变量用来存储数据
@@ -447,8 +448,8 @@ Out[6]: bool
 **1）数字变量之间可以直接计算**
 + 在Python中，两个数字型变量之间可以直接进行算数运算
 + 如果变量是bool型，在计算时
-	+ True对应的数字是 1
-	+ False对应的数字是 0
+	- True对应的数字是 1
+	- False对应的数字是 0
 演练
 ```
 In [1]: i = 10
@@ -490,7 +491,7 @@ TypeError                                 Traceback (most recent call last)
 <ipython-input-8-7799d2023e21> in <module>()
 ----> 1 first_name + 10
 TypeError: Can't convert 'int' object to str implicitly
-In [9]: first_name + "10" —— 此时10已经变成了字符串
+In [9]: first_name + "10"  # 此时10已经变成了字符串
 Out[9]: '三10'
 ```
 ## 变量的输入
@@ -569,8 +570,8 @@ Out[9]: '三10'
   print(money)
 ```
 + 改进后的好处：
-  1.节约空间，只需要为一个变量分配空间
-  2.命名方便，不需要为中间变量命名
+  - 节约空间，只需要为一个变量分配空间
+  - 命名方便，不需要为中间变量命名
 
 ## 变量的格式化输出
 
@@ -578,8 +579,8 @@ Out[9]: '三10'
 + 在Python中可以使用print函数将信息输出到控制台
 + 如果希望输出文字信息的同时，一起输出数据，就需要使用到 **格式化操作符**
 + % 被称为 **格式化操作符** ，专门用于处理字符串中的格式
-  + 包含 % 的字符串，被称为格式化字符串
-  + % 和不同的字符连用，不同类型的数据需要使用不同格式化字符
+  - 包含 % 的字符串，被称为格式化字符串
+  - % 和不同的字符连用，不同类型的数据需要使用不同格式化字符
 
 |格式化字符|含义|
 |:---|:---|
@@ -589,34 +590,37 @@ Out[9]: '三10'
 |%%   |输出%   |
 
 + 语法格式如下：
-  print（”格式化字符串“ % 变量1）
-  print（”格式化字符串“ % 变量1，变量2...）
+  + print（”格式化字符串“ % 变量1）
+  + print（”格式化字符串“ % (变量1，变量2...))  # 格式化字符串中有多个变量时，%号后面接的是元组
 ```
   # 定义字符串变量 name， 输出 请多多关照
   name = "小明"
-  print("%s,请多多关照"%name)
+  print("%s,请多多关照" % name)
 ```
+
 ```
   # 定义整数变量std_no,输出 学号 000001
   std_no = 1
-  print("学号 %06d"%std_no)
+  print("学号 %06d" % std_no)
 ```
+
 ```
   # 定义小数price、weight、money，
   # 输出 苹果单价，购买了5，需要支付45
   price = 8.5
   weight = 7.5
   money = price * weight
-  # print("苹果单价 %f，购买了 %f，需要支付 %f" % (price,weight,money))
+  # print("苹果单价 %f，购买了 %f，需要支付 %f" % (price, weight, money))
   #苹果单价 8.500000，购买了 7.500000，需要支付 63.750000
-  print("苹果单价 %.2f，购买了 %.3f，需要支付 %.4f" % (price,weight,money))
+  print("苹果单价 %.2f，购买了 %.3f，需要支付 %.4f" % (price, weight, money))
   #苹果单价 8.50，购买了 7.500，需要支付 63.7500
 ```
+
 ```
   # 定义一个小数scale, 输出 数据比例是 10.00%
   scale = 0.25 * 100
-  # print("数据比例是 %f%%" %scale)
+  # print("数据比例是 %f%%" % scale)
   # 数据比例是 25.000000%
-  print("数据比例是 %.2f%%" %scale)
+  print("数据比例是 %.2f%%" % scale)
   # 数据比例是 25.00%
 ```
