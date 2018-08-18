@@ -45,7 +45,7 @@
 # 使用python 2.x解释器
 $ python xxx.py
 
-#使用python 3.x解释器
+# 使用python 3.x解释器
 $ python3 xxx.py
 ```
 **其他解释器**
@@ -86,8 +86,6 @@ Python 3.5.2 (default, Nov 23 2017, 16:37:01)
 Type "help", "copyright", "credits" or "license" for more information.
 >>>
 heigou@ubuntu:~$
-
-
 ```
 **3）IPython**
 + IPython中的“I”代表交互interactive
@@ -198,6 +196,7 @@ print("Hello")
 ## 算数运算符
 + 算数运算符是运算符的一种
 + 是完成基本的算术运算使用的符号，处理四则运算
+
 |运算符|描述|
 |:---|:---|
 |+   |加   |   
@@ -261,11 +260,11 @@ Out[10]: '----------'
 
 + 查看Python解释器大小
 ```
-heigou@ubuntu:~/Desktop$ which python ——查看位置
+heigou@ubuntu:~/Desktop$ which python # 查看位置
 /usr/bin/python
 heigou@ubuntu:~/Desktop$ ls -lh /usr/bin/python
 lrwxrwxrwx 1 root root 9 Aug  2 01:02 /usr/bin/python -> python2.7
-heigou@ubuntu:~/Desktop$ ls -lh /usr/bin/python2.7 ——查看Python2.7大小
+heigou@ubuntu:~/Desktop$ ls -lh /usr/bin/python2.7 # 查看Python2.7大小
 -rwxr-xr-x 1 root root 3.4M Dec  5  2017 /usr/bin/python2.7
 ```
 + python和python2.7实则建立软连接
@@ -304,13 +303,14 @@ Out[4]: '222222'
 In [5]: qq_num
 Out[5]: '111111'
 ```
+
 ### 2）变量演练2 -- PyCharm
 ```
-1.定义一个变量记录QQ号码
+# 1.定义一个变量记录QQ号码
 qq_num = "1111111"
-2.定义一个变量记录QQ密码
+# 2.定义一个变量记录QQ密码
 qq_password = "222222"
-如果希望通过解释器的方式，输出变量的内容，需要使用print函数
+# 如果希望通过解释器的方式，输出变量的内容，需要使用print函数
 print(qq_num)
 print(qq_password)
 ```
@@ -321,13 +321,13 @@ print(qq_password)
 > + 定义变量之后，后续则可以直接使用
 
 ```
-	#1.定义苹果的单价
-	price  = 8.5
-	#2.定义购买重量
-	weight = 7.5
-	#计算金额
-	money = price * weight
-	print(money)
+# 1.定义苹果的单价
+price  = 8.5
+# 2.定义购买重量
+weight = 7.5
+# 计算金额
+money = price * weight
+print(money)
 ```
 ## 关闭标签
 
@@ -336,15 +336,15 @@ print(qq_password)
 ## 思考题
 
 ```
-	# 1.定义苹果的单价
-	price  = 8.5
-	# 2.定义购买重量
-	weight = 7.5
-	# 计算金额
-	money = price * weight
-	# 4.只要买苹果，就返回5块钱
-	money = money - 5
-	print(money)
+# 1.定义苹果的单价
+price  = 8.5
+# 2.定义购买重量
+weight = 7.5
+# 计算金额
+money = price * weight
+# 4.只要买苹果，就返回5块钱
+money = money - 5
+print(money)
 ```
 + 变量名只有在第一次出现才是定义变量
 + 变量名再次出现，不是定义变量，而是直接使用之前定义过的变量
@@ -374,18 +374,18 @@ print(qq_password)
 身高：175cm
 体重：75kg
 """
-	#在运行的时候，Python解释器会根据赋值语句等号右侧的数据
-	#自行推导出变量中保存数据的准确类型
-	#str表示是一个字符串类型
-	name = "xm" # python中字符串需要双引号
-	# int表示一个字符串类型
-	age = 18
-	# bool表示一个布尔类型，真是True或者假是False
-	gender = True # yes
-	# float表示是一个小数类型、浮点数
-	height = 1.75
-	weight = 75.0
-	print(name)
+# 在运行的时候，Python解释器会根据赋值语句等号右侧的数据
+# 自行推导出变量中保存数据的准确类型
+# str表示是一个字符串类型
+name = "xm" # python中字符串需要双引号  # 好像没这个说法，单引号和双引号都可以定义字符串
+# int表示一个字符串类型
+age = 18
+# bool表示一个布尔类型，真是True或者假是False
+gender = True # yes
+# float表示是一个小数类型、浮点数
+height = 1.75
+weight = 75.0
+print(name)
 ```
 
 ![variabe ](image/variabe.png)
@@ -416,25 +416,25 @@ print(qq_password)
 > + int （整数）
 > + long（长整数）
 ```
-  #  ipython
-  In [1]: 2 ** 32
-  Out[1]: 4294967296
-  In [2]: type(2 ** 32)
-  Out[2]: int
-  In [3]: type(2 **64)
-  Out[3]: long
-  In [4]: 2 ** 64
-  Out[4]: 18446744073709551616L
-  #ipython3
-  In [1]: type(2 ** 32)
-  Out[1]: int
-  In [2]: type(2 **64)
-  Out[2]: int
-  In [3]: 2 ** 64
-  Out[3]: 18446744073709551616
+# ipython
+In [1]: 2 ** 32
+Out[1]: 4294967296
+In [2]: type(2 ** 32)
+Out[2]: int
+In [3]: type(2 **64)
+Out[3]: long
+In [4]: 2 ** 64
+Out[4]: 18446744073709551616L
+# ipython3
+In [1]: type(2 ** 32)
+Out[1]: int
+In [2]: type(2 **64)
+Out[2]: int
+In [3]: 2 ** 64
+Out[3]: 18446744073709551616
 ```
 + 使用type函数可以查看一个变量的类型
-```shell
+```
 In [1]: name = "xm"
 In [2]: type(name)
 Out[2]: str
@@ -468,13 +468,13 @@ Out[7]: 10
 **2)字符串变量之间使用 + 拼接字符串**
 + 在Python中，字符串之间可以使用 + 拼接生成新的字符串
 ```
-  #  ipython3
-  In [1]: first_name = "三"
-  In [2]: last_name = "张"
-  In [3]: first_name + last_name
-  Out[3]: '三张'
-  In [4]: last_name + first_name
-  Out[4]: '张三'
+# ipython3
+In [1]: first_name = "三"
+In [2]: last_name = "张"
+In [3]: first_name + last_name
+Out[3]: '三张'
+In [4]: last_name + first_name
+Out[4]: '张三'
 ```
 **3）字符串变量可以和整数使用*重复拼接相同的字符串**
 ```
@@ -492,7 +492,7 @@ TypeError                                 Traceback (most recent call last)
 <ipython-input-8-7799d2023e21> in <module>()
 ----> 1 first_name + 10
 TypeError: Can't convert 'int' object to str implicitly
-In [9]: first_name + "10" —— 此时10已经变成了字符串
+In [9]: first_name + "10"  # 此时10已经变成了字符串
 Out[9]: '三10'
 ```
 ## 变量的输入
@@ -514,23 +514,23 @@ Out[9]: '三10'
 + 语法如下：
   字符串变量 = input（“提示信息：”）
 ```
-  # ipython3
-  In [1]: input()
-  111
-  Out[1]: '111'
-  In [2]: input("请输入学号")
-  请输入学号111111
-  Out[2]: '111111'
-  In [3]: password = input("请输入学号")
-  请输入学号111111
-  In [4]: print(password)
-  111111
-  In [5]: type(password)
-  Out[5]: str
-  In [6]: age = input("请输入您的年龄")
-  请输入您的年龄18
-  In [7]: type(age)
-  Out[7]: str
+# ipython3
+In [1]: input()
+111
+Out[1]: '111'
+In [2]: input("请输入学号")
+请输入学号111111
+Out[2]: '111111'
+In [3]: password = input("请输入学号")
+请输入学号111111
+In [4]: print(password)
+111111
+In [5]: type(password)
+Out[5]: str
+In [6]: age = input("请输入您的年龄")
+请输入您的年龄18
+In [7]: type(age)
+Out[7]: str
 ```
 **3）类型转换函数**
 
@@ -545,30 +545,30 @@ Out[9]: '三10'
 + 收银员输入用户购买苹果的重量
 + 计算且输出付款金额
 ```
-  # 1.输入苹果的单价
-  price_str = input("苹果的单价:")
-  # 2.输入苹果的重量
-  weight_str = input("苹果的重量:")
-  # 3.计算支付的总金额
-  # 注意：两个字符变量之间是不能直接用乘法的
-  # money = price_str * weight_str
-  # 1>将价格转换成小数
-  price = float(price_str)
-  # 2>将重量转换成小数
-  weight = float(weight_str)
-  # 3>用两个小数来计算最终的金额
-  money = price * weight
-  print(money)
+# 1.输入苹果的单价
+price_str = input("苹果的单价:")
+# 2.输入苹果的重量
+weight_str = input("苹果的重量:")
+# 3.计算支付的总金额
+# 注意：两个字符变量之间是不能直接用乘法的
+# money = price_str * weight_str
+# 1>将价格转换成小数
+price = float(price_str)
+# 2>将重量转换成小数
+weight = float(weight_str)
+# 3>用两个小数来计算最终的金额
+money = price * weight
+print(money)
 ```
 **解决定义多变量问题**
 ```
-  # 1. 输入苹果的单价
-  price = float(input("苹果的价格"))
-  # 2. 输入苹果的重量
-  weight = float(input("苹果的重量:"))
-  # 3.计算金额
-  money = price * weight
-  print(money)
+# 1. 输入苹果的单价
+price = float(input("苹果的价格"))
+# 2. 输入苹果的重量
+weight = float(input("苹果的重量:"))
+# 3.计算金额
+money = price * weight
+print(money)
 ```
 + 改进后的好处：
   1.节约空间，只需要为一个变量分配空间
@@ -587,38 +587,38 @@ Out[9]: '三10'
 |:---|:---|
 |%s   |字符串   |
 |%d   |有符号十进制整数，%06d表示输出的整数显示位数，不足的地方用 0 补全   |
-|%f   |浮点数，%.02f表示小数点后只显示两位   |
+|%f   |浮点数，%.2f表示小数点后只显示两位   | # %.02f 这里的0没用
 |%%   |输出%   |
 
 + 语法格式如下：
   print（”格式化字符串“ % 变量1）
-  print（”格式化字符串“ % 变量1，变量2...）
+  print（”格式化字符串“ % (变量1，变量2...))  # 格式化字符串中有多个变量时，百分号后面接的是元组
 ```
-  # 定义字符串变量 name， 输出 请多多关照
-  name = "小明"
-  print("%s,请多多关照"%name)
-```
-```
-  # 定义整数变量std_no,输出 学号 000001
-  std_no = 1
-  print("学号 %06d"%std_no)
+# 定义字符串变量 name， 输出 请多多关照
+name = "小明"
+print("%s,请多多关照" % name)
 ```
 ```
-  # 定义小数price、weight、money，
-  # 输出 苹果单价，购买了5，需要支付45
-  price = 8.5
-  weight = 7.5
-  money = price * weight
-  # print("苹果单价 %f，购买了 %f，需要支付 %f" % (price,weight,money))
-  #苹果单价 8.500000，购买了 7.500000，需要支付 63.750000
-  print("苹果单价 %.2f，购买了 %.3f，需要支付 %.4f" % (price,weight,money))
-  #苹果单价 8.50，购买了 7.500，需要支付 63.7500
+# 定义整数变量std_no,输出 学号 000001
+std_no = 1
+print("学号 %06d" % std_no)
 ```
 ```
-  # 定义一个小数scale, 输出 数据比例是 10.00%
-  scale = 0.25 * 100
-  # print("数据比例是 %f%%" %scale)
-  # 数据比例是 25.000000%
-  print("数据比例是 %.2f%%" %scale)
-  # 数据比例是 25.00%
+# 定义小数price、weight、money，
+# 输出 苹果单价，购买了5，需要支付45
+price = 8.5
+weight = 7.5
+money = price * weight
+# print("苹果单价 %f，购买了 %f，需要支付 %f" % (price, weight, money))
+#苹果单价 8.500000，购买了 7.500000，需要支付 63.750000
+print("苹果单价 %.2f，购买了 %.3f，需要支付 %.4f" % (price, weight, money))
+#苹果单价 8.50，购买了 7.500，需要支付 63.7500
+```
+```
+# 定义一个小数scale, 输出 数据比例是 10.00%
+scale = 0.25 * 100
+# print("数据比例是 %f%%" % scale)
+# 数据比例是 25.000000%
+print("数据比例是 %.2f%%" % scale)
+# 数据比例是 25.00%
 ```
