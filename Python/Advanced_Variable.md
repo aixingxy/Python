@@ -26,7 +26,7 @@
 + 列表的索引从 0 开始
   - 索引就是数据在列表中的位置编号，索引又可以被称为下标
 
-```shell
+```python
 In [5]: name_list = ["zhangsan","lisi","wangwu"]
 
 In [6]: name_list
@@ -41,14 +41,14 @@ Out[6]: ['zhangsan', 'lisi', 'wangwu']
 + 在IPython3中定义一个列表，例如：name_list = []
 + 输入name_list.按下TAB键，ipython会提示列表能够使用的方法如下：
 
-```shell
+```python
 In [2]: name_list.
 name_list.append   name_list.count    name_list.insert   name_list.reverse
 name_list.clear    name_list.extend   name_list.pop      name_list.sort
 name_list.copy     name_list.index    name_list.remove
 ```
 
-```shell
+```python
   # 定义一个列表
   name_list = ["zhangsan","lisi","wangwu"]
   #  1. 取值和索引
