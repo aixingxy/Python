@@ -32,7 +32,7 @@
 1.新建04_函数项目
 2.复制之前完成的乘法表文件
 3.修改文件，增加函数定义multiple_table()
-```shell
+```python
 def multiple_table():
 
     # 打印9行小星星
@@ -47,14 +47,14 @@ def multiple_table():
         row += 1
 ```
 4.新建另外一个文件，使用import导入并且调用函数
-```shell
+```python
 import hg_01_九九乘法表
 hg_01_九九乘法表.multiple_table()
 ```
 ## 函数的基本使用
 ### 函数的定义
 定义函数格式如下：
-```shell
+```python
 def 函数名()：
   函数封装的代码
   ......
@@ -68,14 +68,14 @@ def 函数名()：
 ```
 ### 函数的调用
 通过 函数名() 即可完成对函数的调用：
-```shell
+```python
 def say_hello():
     print("hello 1")
 say_hello()
 ```
 
 ### 第一个函数改造
-```shell
+```python
   name = "小明"
   # python 解释器只知道下方定义了一个函数
   def say_hello():
@@ -88,7 +88,7 @@ say_hello()
   print(name)
 ```
 **不能在定义函数之前就调用函数**
-```shell
+```python
 NameError: name 'say_hello' is not defined
 ```
 ### PyCharm的调试工具
@@ -100,7 +100,7 @@ NameError: name 'say_hello' is not defined
 ![function](image/function.png)
 
 ## 函数的参数
-```shell
+```python
 def sum_2_sum():
     """对两个数字求和"""
     num1 = 10
@@ -112,7 +112,7 @@ sum_2_sum()
 ### 函数参数的使用
 + 在函数名的后面的小括号内部填写参数
 + 多个参数之间使用，分隔
-```shell
+```python
 def sum_2_sum(num1,num2):
     """对两个数字求和"""
     # num1 = 10
@@ -133,7 +133,7 @@ sum_2_sum(10,30)
 + 调用函数一方，可以使用变量来接收函数的返回结果
 > return 表示返回，后续的代码都不会被执行
 
-```shell
+```python
 def sum_2_sum(num1,num2):
     """对两个数字求和"""
     # num1 = 10
@@ -144,7 +144,7 @@ sum_result = sum_2_sum(10,30)
 print("对两个数字求和结果：%d" % sum_result)
 ```
 ## 函数的嵌套调用
-```shell
+```python
 def test1():
     print("*" * 50)
 def test2():
@@ -183,7 +183,7 @@ print_lines("-",50)
 
 + 分隔线模块
 
-```shell
+```python
 def print_line(char,times):
     print(char * times)
 
@@ -196,7 +196,7 @@ print_lines("-",50)
 ```
 + 体验模块
 
-```shell
+```python
 import hg_10_分隔线模块
 
 hg_10_分隔线模块.print_line("-",50)
