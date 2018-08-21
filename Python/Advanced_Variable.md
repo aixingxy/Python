@@ -9,6 +9,16 @@
 		- [元组的常用操作](#元组的常用操作)
 		- [循环遍历](#循环遍历)
 		- [应用场景](#应用场景)
+	- [字典](#字典)
+		- [字典的定义](#字典的定义)
+		- [字典的常用操作](#字典的常用操作)
+		- [循环遍历](#循环遍历)
+		- [应用场景](#应用场景)
+	- [字符串](#字符串)
+		- [字符串的定义](#字符串的定义)
+		- [字符串的常用操作](#字符串的常用操作)
+		- [字符串常用操作](#字符串常用操作)
+		- [字符串的切片](#字符串的切片)
 
 <!-- /TOC -->
 # 高级变量
@@ -290,4 +300,364 @@ num_list   num_tuple
 In [5]: num2_list = list(num_tuple)
 In [6]: type(num2_list)
 Out[6]: list
+```
+## 字典
+### 字典的定义
++ dictionary（字典）是除列表以外Python之中最灵活的数据类型
++ 字典同样可以用来存储多个数据
+	- 通常用于存储描述一个物体的相关信息
++ 和列表的区别
+	- 列表是有序的对象集合
+	- 字典是无序的对象集合
++ 字典用 {} 定义
++ 字典使用键值对存储数据，键值对 之间 使用 ，分隔
+	- 键 key 是索引
+	- 值value是数据
+	- 键和值之间使用 ：分隔
+	- 键必须是唯一的
+	- 值可以取任何数据类型，但 键只能使用字符串、数字或元组
+
+![dictionary](image/dictionary.png)
+
+```python
+	# 字典是无序的数据结合，所以print输出无序，
+	# 通常和定义的顺序是不一致的
+	xiaoming = {"name":"小明",
+	            "age":18,
+	            "gender":True,
+	            "height":1.75,
+	            "weight":50}
+	# 为了阅读清晰，定义时每一个键值对都各自占有一行代码`
+print(xiaoming)
+```
+```python
+	xiaoming_dict = {"name":"小明"}
+	# 1.取值
+	print(xiaoming_dict["name"])
+	# 在取值时，如果指定的key不存在，程序会报错
+	# print(xiaoming_dict["name123"])
+	# 2.增加/修改
+	# 如果key不存在，会新增键值对
+	xiaoming_dict["age"] = 18
+	# 如果key存在。会修改已近存在的键值对
+	xiaoming_dict["name"] = "xxm"
+	# 3.删除
+	xiaoming_dict.pop("name")
+	# 再删除指定键值时，如果指定键值key不存在，程序会报错
+	# xiaoming_dict.pop("name123")
+	print(xiaoming_dict)
+```
+### 字典的常用操作
++ 在ipthon3中定义一个字典，例如：xiaoming = {}
++ 输入xiaoming. 按下TAB键，ipython会提示字典能够使用的函数如下：
+
+```python
+In [1]: xiaoming = {}
+In [2]: xiaoming.
+xiaoming.clear       xiaoming.items       xiaoming.setdefault
+xiaoming.copy        xiaoming.keys        xiaoming.update
+xiaoming.fromkeys    xiaoming.pop         xiaoming.values
+xiaoming.get         xiaoming.popitem   
+```
+```python
+	xiaoming_dict = {"name":"小明",
+	                 "age":18}
+	# 1. 统计键值对数量
+	print(len(xiaoming_dict))
+	# 2.合并字典
+	temp_dict = {"height":1.75,
+	             "age":20}
+	# 注意：如果被合并的字典中包含已经存在的键值对，会覆盖原有的键值对
+	xiaoming_dict.update(temp_dict)
+	# 3.清空字典
+	xiaoming_dict.clear()
+	print(xiaoming_dict)
+```
+### 循环遍历
++ 遍历就是依次从字典中获取所有键值对
+
+```python
+	xiaoming_dict = {"name":"小明",
+	                 "qq":"111111",
+	                 "phone":"10086"}
+	# 迭代遍历字典
+	# 变量K是每一次循环中，获取到的键值对的key
+	for k in xiaoming_dict:
+	    print("%s - %s" %(k,xiaoming_dict[k]))
+```
+### 应用场景
++ 在开发中的应用场景：
+	- 使用多个键值对，存储描述一个物体的相关信息——描述更复杂的数据信息
+	- 将多个字典放在列表中，再进行遍历，在循环体内部针对每一个字典进行相同的处理
+
+```python
+	# 使用多个键值对，存储描述一个物体的相关信息——描述更复杂的数据信息
+	# 将多个字典放在一个列表中，再进行遍历
+	card_list = [
+	    {"name":"小明",
+	     "qq":"111111",
+	     "phone":"10086"},
+	    {"name":"lisi",
+	     "qq":"222222",
+	     "phone":"2222"}
+	]
+	for card_info in card_list:
+	    print(card_info)
+```
+## 字符串
+### 字符串的定义
++ 字符串就是一串字符，是编程语言中表示文本的数据类型
++ 在Python中可以使用一对单引号 ‘ ’ 或者一对双引号 “”，定义一个字符串
+	- 虽然可以使用 \" 或者 \' 做字符串的转义，但是在实际开发中：
+		- 如果字符串内部需要使用 ”，可以使用 ’ 定义字符串
+		- 如果字符串内部需要使用 ‘’，可以使用 ” 定义字符串
++ 可以使用索引获取一个字符串中指定位置的字符，索引计数从零开始
++ 也可以使用for循环遍历字符串中每一个字符
+> 大多数编程语言都是用 ” 来定义字符串
+```python
+str1 = "hello python"
+str2 = 'my name is "不知道"'
+print(str2)
+print(str1[6])
+for char in str2:
+    print(char)
+```
+### 字符串的常用操作
+
+![str](image/str.png)
+
+```python
+	hello_str = "hello"
+	# 1.统计字符串长度
+	print(len(hello_str))
+	# 2.统计某一个小字符串出现的次数
+	print(hello_str.count("l"))
+	print(hello_str.count("abc"))
+	# 3. 某一个子字符串出现的位置
+	print(hello_str.index("ll"))
+	# 注意：如果使用index方法传递的子字符串不存在，程序会报错！
+	print(hello_str.index("abc"))
+```
+### 字符串常用操作
++ 在ipthon3中定义一个字符串，例如：hello_str = ""
++ 输入hello_str. . 按下TAB键，ipython会提示字符串能够使用的函数如下：
+
+```python
+In [1]: hello_str = ""
+In [2]: hello_str.
+hello_str.capitalize    hello_str.isidentifier  hello_str.rindex
+hello_str.casefold      hello_str.islower       hello_str.rjust
+hello_str.center        hello_str.isnumeric     hello_str.rpartition
+hello_str.count         hello_str.isprintable   hello_str.rsplit
+hello_str.encode        hello_str.isspace       hello_str.rstrip
+hello_str.endswith      hello_str.istitle       hello_str.split
+hello_str.expandtabs    hello_str.isupper       hello_str.splitlines
+hello_str.find          hello_str.join          hello_str.startswith
+hello_str.format        hello_str.ljust         hello_str.strip
+hello_str.format_map    hello_str.lower         hello_str.swapcase
+hello_str.index         hello_str.lstrip        hello_str.title
+hello_str.isalnum       hello_str.maketrans     hello_str.translate
+hello_str.isalpha       hello_str.partition     hello_str.upper
+hello_str.isdecimal     hello_str.replace       hello_str.zfill
+hello_str.isdigit       hello_str.rfind  
+>  字符串内置提供的方法很多，故开发时，能够对字符串进行更加灵活的操作
+```
+**1)判断类型-9**
+
+|方法 |说明 |
+|:---|:---|
+|string.isspace()   |如果string中只包含空格，则返回True  |
+|string.isalnum()   |如果string至少有一个字符并且所有字符都是字母或数字则返回True   |
+|string.isalpha()   |如果string至少有一个字符串并且所有字符都是字母则返回True   |
+|string.isdecimal()   |如果string只包含数字则返回True，全角数字   |
+|string.isdigit()   |如果string只包含数字则返回True，全角数字、（1）、\u00b2 |
+|string.isnumeric()   |如果string只包含数字则返回True，全角数字，汉字数字   |
+|string.istitle()   |如果string是标题化的（每个单词的首字母大写）则返回True   |
+|string.islower()   |如果string中包含一个区分大小写的字符，并且所有这些（区分大小写）字符都是小写，则返回True   |
+|string.isupper   |如果string中包含至少一个区分大小写的字符，并且所有这些（区分大小写）字符都是大写，则返回True   |
+
+```python
+	# 1. 判断空白字符
+	space_str = " \t\r\n"
+	print(space_str.isspace())
+	# 2. 判断字符串中是否只包含数字
+	# 1> 以下三个方法都不能判断小数
+	# num_str = "1"
+	# 2> unicode字符串
+	# num_str = "\u00b2"
+	# num_str = "（1）"
+	# 3> 中文数字
+	num_str = "一千零一夜"
+	print(num_str)
+	print(num_str.isdecimal())
+	print(num_str.isdigit())
+	print(num_str.isnumeric())  # ——可是我自己的结果是 False
+```
+
+**2)查找和替换-7**
+
+|方法 |说明 |
+|:---|:---|
+|string.startswith(str)   |  检查字符串是否以str开头，是则返回True |
+|string.endswith(str)   |检查字符串是否以str结束，是则返回True   |
+|string.find(str,start=0,end=len(string))   |检测str是否包含在string中，如果start和end指定范围，则检查是否包含在指定范围内，如果是则返回索引值，否则返回-1   |
+|string.rfind(str,start=0,end=len(string))   |类似于find（）函数，不过是从右边开始查找   |
+|string.index(str,start=0,end=len(string))   |和find（）方法类似，不过如果str不在string会报错   |
+|string.rindex(str,start=0,end=len(string))   |类似于index（）函数，不过是从右边开始查找   |   
+|string.replace(old_str,new_str,num=string.count(old))   |把string中的old_str替换成new_str,如果指定nun，则替换不超过num次   |
+
+
+```python
+	hello_str = "hello world"
+	# 1. 判断是否以指定字符串开始
+	print(hello_str.startswith("Hello"))
+	# 2. 判断是否以指定字符串结束
+	print(hello_str.endswith("world"))
+	# 3. 查找指定字符串
+	# index同样可以查找指定的字符串在大字符串中的索引
+	print(hello_str.find("llo"))
+	# index 如果指定的字符串不存在，会报错
+	# find 如果指定的字符串不存在，会返回 -1
+	print(hello_str.find("abc"))
+	# 4. 替换字符串
+	# replace 方法执行完成之后，会返回一个新的字符串
+	# 注意：不会修改原有字符串的内容
+	print(hello_str.replace("world","python"))
+	print(hello_str)
+```
+**3)判断类型-5**
+
+|方法|说明|
+|:---|:---|
+|string.capitalize()   |把字符串的第一个字符大写   |
+|string.title()   |把字符串的每个单词首字母大写   |
+|string.lower()   |转换string中所有大写字符为小写   |
+|string.upper()   |转换string中所有小写字母为大写   |
+|string.swapcase()   |翻转string中的大小写   |
+**4)判断类型-3**
+
+|方法 |说明 |
+|:---|:---|
+|string.ljust（width）    |返回一个原字符串左对齐，并使用空格填充至长度width的新字符串   |
+|string.rjust（width）    |返回一个原字符串右对齐，并使用空格填充至长度width的新字符串   |
+|string.center（width）    |返回一个原字符串居中，并使用空格填充至长度width的新字符串   |
+
+```python
+	# 假设：以下内容是从网上抓取
+	# 要求：顺序并且居中对齐输出以下内容
+	poem = ["登鹳雀楼",
+	        "王之涣",
+	        "白日依山尽",
+	        "黄河入海流",
+	        "欲穷千里目",
+	        "更上一层楼"]
+	for poem_str in poem:
+	    print("|%s|" % poem_str.center(10, "　"))
+```
+
+**5)判断类型-3**
+
+|方法|说明|
+|:---|:---|
+|string.lstrip()   |截掉string左边（开始）的空白字符   |
+|string.rstrip()   |截掉string右边（末尾）的空白字符   |
+|string.strip()   |截掉string左右两边的空白字符   |
+```python
+	# 假设：以下内容是从网上抓取
+	# 要求：顺序并且居中对齐输出以下内容
+	poem = ["\t\n登鹳雀楼",
+	        "王之涣",
+	        "白日依山尽",
+	        "黄河入海流",
+	        "欲穷千里目",
+	        "更上一层楼"]
+	for poem_str in poem:
+	    # 先使用strip方法去除字符串中的空白字符
+	    # 再使用center方法中居中显示文本
+	    print("|%s|" % poem_str.strip().center(10, "　"))
+```
+**6)判断类型-5**
+
+|方法|说明|
+|:---|:---|
+|string.partition(str)   |把字符串string分成一个3元素的元组（str前面，str后面）   |
+|string.rpartition(str)   |类似于partition()方法，不过是从右边开始查找   |
+|string.split(str="",num)   |以str为分隔符拆分string，如果num有指定值，则仅分隔num+1个子字符串，str默认包含'\r','\t','\n'和空格   |
+|string.splitlines()   |按照行（'\r','\n','\r\n'）分隔，返回一个包含各行作为元素的列表   |
+|string.join(seq)   |以string作为分隔符，将seq中所有的元素(的字符串表示)合并为一个新的字符串   |
+```python
+	# 假设：以下内容是从网上抓取
+	# 要求：
+	# 1. 将字符串中的空白字符全部去掉
+	# 2. 再使用 “ ” 作为分隔符，拼接成一个整齐的字符串
+	poem_str = "登鹳雀楼\t王之涣\t白日依山尽\t \n黄河入海流\t \t欲穷千里目\t更上一层楼"
+	print(poem_str)
+	# 1. 拆分字符串
+	poem_list = poem_str.split()
+	print(poem_list)
+	# 2.合并字符串
+	result = " ".join(poem_list)
+	print(result)
+
+	# 结果：
+	# 登鹳雀楼	王之涣	白日依山尽	 
+	# 黄河入海流	 	欲穷千里目	更上一层楼
+	# ['登鹳雀楼', '王之涣', '白日依山尽', '黄河入海流', '欲穷千里目', '更上一层楼']
+	# 登鹳雀楼 王之涣 白日依山尽 黄河入海流 欲穷千里目 更上一层楼
+```
+
+### 字符串的切片
++ 切片方法适用于字符串、列表、元组
+	- 切片使用索引值来限定范围，从一个大的字符串中切出小的字符串
+	- 列表和元组都是有序的集合，都能够通过索引值获取到对应的数据
+	- 字典是一个无序的集合，是使用 **键值对** 保存数据
+
+```python
+字符串[开始索引:结束索引:步长]
+```
+
+![qiepian](image/qiepian.png)
+
+**注意：**
+1. 指定的区间数据左闭右开型
+	+  从起始位开始，到结束位的前一位结束（不包含结束位本身）
+2. 从头开始，开始索引数字可以省略，冒号不能省略
+3. 到末尾结束，结束索引数字可以省略，冒号不能省略
+4. 步长默认为 1， 如果连续切片，数字和冒号可以省略
+
+```python
+	In [1]: num_str = "0123456789"
+	# 1.截取从2~5位置的字符串
+	In [2]: num_str[2:6]
+	Out[2]: '2345'
+	# 2.截取从2～末尾的字符串
+	In [3]: num_str[2:]
+	Out[3]: '23456789'
+	# 3.截取从开始～5位置的字符串
+	In [4]: num_str[:6]
+	Out[4]: '012345'
+	In [5]: num_str[0:6]
+	Out[5]: '012345'
+	# 4.截取完整的字符串
+	In [6]: num_str[:]
+	Out[6]: '0123456789'
+	# 5，。从开始位置，每隔一个字符截取一个字符串
+	In [7]: num_str[::2]
+	Out[7]: '02468'
+	# 6.从索引1 开始，每隔一个取一个
+	In [8]: num_str[1::2]
+	Out[8]: '13579'
+	# 7.截取从2～末尾 -1 的字符串
+	In [9]: num_str[2:-1]
+	Out[9]: '2345678'
+	In [10]: num_str[-1]
+	Out[10]: '9'
+	# 8.截取字符串末尾两个字符
+	In [11]: num_str[-2:]
+	Out[11]: '89'
+	# 9.字符串的逆序（面试题）
+	In [13]: num_str[0::-1]
+	Out[13]: '0'
+	In [14]: num_str[-1::-1]
+	Out[14]: '9876543210'
 ```
