@@ -534,6 +534,7 @@ hello_str.isdigit       hello_str.rfind
 |string.lower()   |转换string中所有大写字符为小写   |
 |string.upper()   |转换string中所有小写字母为大写   |
 |string.swapcase()   |翻转string中的大小写   |
+
 **4)判断类型-3**
 
 |方法 |说明 |
